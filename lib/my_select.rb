@@ -2,7 +2,10 @@ def my_select(collection)
 i = 0
 new_array = []
 while i < collection.length
-  new_array << yeild(collection.even?)
+  even << yield(collection[i])
+  if even == true
+    new_array << collection[i]
+  end
   i += 1
 end
 new_array
